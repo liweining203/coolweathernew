@@ -28,7 +28,7 @@ public class CoolWeatherDB {
 	 */
 	private CoolWeatherDB(Context context) {
 		CoolWeatherOpenHelper dbHelper=new CoolWeatherOpenHelper(context, 
-				DB_NAME, null, VERSION, null);
+				DB_NAME, null, VERSION);
 	
 		db=dbHelper.getWritableDatabase();
 	}
@@ -42,18 +42,149 @@ public class CoolWeatherDB {
 		return coolWeatherDB;
 	}
 	
+	
+	/**
+	 * 添加Province信息到数据库
+	 */
+	public void addProvince(){
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"北京","01"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"上海","02"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"天津","03"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"重庆","04"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"黑龙江","05"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"吉林","06"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"辽宁","07"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"内蒙古","08"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"河北","09"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"山西","10"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"陕西","11"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"山东","12"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"新疆","13"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"西藏","14"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"青海","15"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"甘肃","16"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"宁夏","17"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"河南","18"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"江苏","19"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"湖北","20"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"浙江","21"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"安徽","22"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"福建","23"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"江西","24"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"湖南","25"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"贵州","26"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"四川","27"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"广东","28"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"云南","29"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"广西","30"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"海南","31"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"香港","32"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"澳门","33"});
+//		db.execSQL("insert into Province(province_name,province_code) values(?,?) ",
+//				new String[]{"台湾","34"});
+		//db.close();
+	
+	}
+	
+	/**
+	 * 添加城市信息
+	 */
+	public void addCities(){
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"西安","101110101"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"铜川","101111001"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"宝鸡","101110901"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"咸阳","101110200"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"渭南","101110501"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"延安","101110300"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"汉中","101110801"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"榆林","101110401"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"安康","101110701"});
+//		db.execSQL("insert into City(city_name,city_code) values(?,?) ",
+//				new String[]{"商洛","101110601"});
+		//db.close();
+	}
+	
+	/**
+	 * 添加县级数据
+	 */
+	public void addCounties(){
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"岐山","101110905"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"凤翔","101110906"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"扶风","101110907"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"眉县","101110908"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"陇县","101110911"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"千阳","101110903"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"麟游","101110904"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"凤县","101110910"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"太白县","101110909"});
+//		db.execSQL("insert into County(county_name,county_code) values(?,?) ",
+//				new String[]{"陈仓","101110912"});
+		//db.close();
+		
+	}
+	
 	/**
 	 * 将Province实例存储到数据库
 	 */
-	public void saveProvince(Province province){
+	public void saveProvince(Province province){		
+		ContentValues values=new ContentValues();
 		if (province!=null) {
-			ContentValues values=new ContentValues();
 			values.put("province_name", province.getProvinceName());
 			values.put("province_code", province.getProvinceCode());
 			db.insert("Province", null, values);
 		}
 	}
-	
 	/**
 	 * 从数据库读取全国所有的省份信息
 	 */
@@ -85,7 +216,7 @@ public class CoolWeatherDB {
 		if (city!=null) {
 			values.put("city_name", city.getCityName());
 			values.put("city_code", city.getCityCode());
-			values.put("province_id", city.getProviceId());	
+			values.put("province_id", city.getProvinceId());	
 			db.insert("City", null, values);
 		}
 
@@ -104,7 +235,7 @@ public class CoolWeatherDB {
 			city.setCityId(cursor.getInt(cursor.getColumnIndex("id")));
 			city.setCityName(cursor.getString(cursor.getColumnIndex("city_name")));
 			city.setCityCode(cursor.getString(cursor.getColumnIndex("city_code")));
-			city.setProviceId(provinceId);
+			city.setProvinceId(provinceId);
 			listCites.add(city);
 		} while (cursor.moveToNext());
 		
@@ -124,7 +255,7 @@ public class CoolWeatherDB {
 			db.insert("County", null, values);
 		}
 	}
-	
+
 	/**
 	 * 从数据库读取某城市下的所有县的信息
 	 */
